@@ -1,0 +1,8 @@
+flatliste= []
+def flatten(liste):
+    for element in liste:
+            if type(element) == list:
+                flatten(element)
+            else:
+                flatliste.append(element)
+    return flatliste
