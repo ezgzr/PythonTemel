@@ -1,0 +1,10 @@
+reversedListe=[]
+def reverse(liste):
+    liste=liste[::-1]
+    for element in liste:
+        if type(element)==list:
+            element=element[::-1]
+            reversedListe.append(element)
+        else:
+            reversedListte.append(element)
+    return reversedListe
